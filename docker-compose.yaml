@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  run:
+    volumes:
+      - "${PWD}:/app"
+      - /app/node_modules
+    ports:
+      - "4201:4200"
+    container_name: oskarssuperapp:dev
+    image: run
