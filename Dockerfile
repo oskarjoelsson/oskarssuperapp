@@ -4,6 +4,7 @@ WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 RUN apk add --upgrade --no-cache git
 
+
 RUN npm install -g @angular/cli
 COPY . /app
 
