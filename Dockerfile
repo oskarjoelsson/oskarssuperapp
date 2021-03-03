@@ -3,8 +3,8 @@ FROM node:lts-alpine3.12
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 
-RUN npm install -g @angular/cli
 COPY . /app
+RUN npm install -g @angular/cli
 
 EXPOSE 4200
-CMD npm install && ng serve --host 0.0.0.0
+CMD ng serve --host 0.0.0.0
