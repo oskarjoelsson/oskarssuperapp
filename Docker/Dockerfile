@@ -4,11 +4,9 @@ WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 RUN apk add --upgrade --no-cache git
 
-# COPY package.json /app/package.json
 RUN npm install -g @angular/cli
-RUN git clone https://github.com/oskarjoelsson/oskarssuperapp.git /app
+COPY . /app
 
-# RUN ng new oskarssuperapp --defaults --skip-git
 
 EXPOSE 4200
 
