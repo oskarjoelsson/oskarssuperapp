@@ -1,9 +1,7 @@
 version: "3.3"
 services:
   run:
-    volumes:
-      - "${PWD}/../:/app"
     ports:
       - "4200:4200"
     container_name: oskarssuperapp
-    image: oskarjoelssonffcg/oskarssuperapp
+    image: oskarjoelssonffcg/oskarssuperapp:dev
