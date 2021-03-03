@@ -6,4 +6,4 @@ services:
     ports:
       - "4200:4200"
     container_name: oskarssuperapp
-    image: oskarjoelssonffcg/oskarssuperapp:dev
+    image: oskarjoelssonffcg/oskarssuperapp
