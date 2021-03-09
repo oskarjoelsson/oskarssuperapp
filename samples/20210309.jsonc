@@ -1,0 +1,17 @@
+// Ett konto-id i guid-format. (accountId)
+// Namn på kontoägaren (accountOwner)
+// Ett saldo (balance) bestående av ett belopp (amount) och en valuta (currency)
+// Datum och tid för senaste transaktion (latestTransactionTime)
+
+
+{
+    "accountId": 123,
+    "accountOwner": "hej hejsson",
+    "balance": [
+        {
+            "amount": 0,
+            "currency": "EUR"
+        }
+    ],
+    "latestTransactionTime": 1615313212
+}
