@@ -1,0 +1,21 @@
+// Traps of interest
+// ==
+// Din uppgift här är att skriva koden för en tänkt microservice.
+// Dess indata kommer i JSON-format och består av:
+// Ett konto-id i guid-format. (accountId)
+// Namn på kontoägaren (accountOwner)
+// Ett saldo (balance) bestående av ett belopp (amount) och en valuta (currency)
+// Datum och tid för senaste transaktion (latestTransactionTime)
+// Din service skall beräkna en ränta på saldot om och endast om det gått minst en månad sedan senaste transaktionen. (Räntesatsen kan vara hårdkodad för närvarande.) 
+// Den skall också simulera loggning av indata och resultat till bankens gamla logsystem. Det systemet tar bara emot en sträng på max tvåhundra tecken.
+{
+    "accountId": 123,
+    "accountOwner": "hej hejsson",
+    "balance": [
+        {
+            "amount": 0,
+            "currency": "EUR"
+        }
+    ],
+    "latestTransactionTime": 1615313212
+}

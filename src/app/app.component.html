@@ -1,6 +1,11 @@
-<h2>Oskars superapp</h2>
+<h1>GIVE ME YOUR MONEY!</h1>
+<app-input-json-value></app-input-json-value>
 
-Test 123 22 11P
-test <br>
-hejs<br>
-a<br>b<br>b<br>a<br>
+
+<ol>
+    <li *ngFor="let m of message | async">
+        {{ m.message }}
+    </li>
+</ol>
+
+<button (click)="post()">Test123</button> 

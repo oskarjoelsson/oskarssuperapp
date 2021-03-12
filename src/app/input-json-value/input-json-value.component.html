@@ -1,0 +1,8 @@
+<p>input-json-value works!</p>
+<label>
+    Please input json:
+    <input type="text" [formControl]="inputData">
+    <button (click)=updateName()>Update value </button>
+    <br>
+    input: {{ inputData.value }}
+</label>
