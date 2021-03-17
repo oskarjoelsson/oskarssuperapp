@@ -1,7 +1,7 @@
 import express from 'express';
 import { routes } from './routes';
 import { Convert, TrapsOfInterest } from "./src/interfaces/InputData";
-import myData from '../assets/20210309.json';
+import myData from './assets/20210309.json';
 
 const inputData = Convert.trapsOfInterestToJson(myData);
 let outputData = myData.accountOwner.toString();
@@ -31,6 +31,6 @@ app.use(express.json());
 app.use('/', routes);
 routes.get('/', (req, res) => res.send({myData}));
 
-app.listen(4201, '127.0.0.1', function () {
-    console.log('Server now listen, port http://127.0.0.1:4201');
+app.listen(4201, '0.0.0.0', function () {
+    console.log('Server now listen, port http://0.0.0.0:4201');
 })
