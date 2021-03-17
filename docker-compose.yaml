@@ -4,13 +4,13 @@ services:
     volumes:
       - ${PWD}:/app
     ports:
-      - '4441:4200'
+      - '4200:4200'
     container_name: oskarssuperapp_frontend
     image: oskarjoelssonffcg/oskarssuperapp:dev
     # build: .
   backend:
     ports:
-      - '4442:4201'
+      - '4201:4201'
     container_name: oskarssuperapp_backend
     image: oskarjoelssonffcg/oskarssuperapp_backend:dev
     # build: ./server/

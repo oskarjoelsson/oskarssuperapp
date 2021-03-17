@@ -2,5 +2,6 @@
 
 docker-compose up
 
-frontend uses port 4441
-backend uses port 4442
+frontend uses port 4200
+
+backend uses port 4201
