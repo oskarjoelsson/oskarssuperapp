@@ -12,8 +12,8 @@ services:
     ports:
       - '4201:4201'
     container_name: oskarssuperapp_backend
-    image: oskarjoelssonffcg/oskarssuperapp_backend:dev
-    # build: ./server/
+    # image: oskarjoelssonffcg/oskarssuperapp_backend:dev
+    build: ./server/
 
   mongo:
     image: mongo:latest
