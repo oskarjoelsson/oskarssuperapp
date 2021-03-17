@@ -4,28 +4,28 @@ services:
     volumes:
       - ${PWD}:/app
     ports:
-      - '4200:4200'
+      - '4441:4200'
     container_name: oskarssuperapp_frontend
-    image: oskarjoelssonffcg/oskarssuperapp:dev
-    # build: .
+    # image: oskarjoelssonffcg/oskarssuperapp:dev
+    build: .
   backend:
     ports:
-      - '4201:4201'
+      - '4442:4201'
     container_name: oskarssuperapp_backend
     # image: oskarjoelssonffcg/oskarssuperapp_backend:dev
     build: ./server/
 
-  mongo:
-    image: mongo:latest
-    restart: always
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: supersecretuser
-      MONGO_INITDB_ROOT_PASSWORD: supersecretpw
-  mongo-express:
-    image: mongo-express
-    restart: always
-    ports:
-      - 8081:8081
-    environment:
-      ME_CONFIG_MONGODB_ADMINUSERNAME: supersecretuser
-      ME_CONFIG_MONGODB_ADMINPASSWORD: supersecretpw
+  # mongo:
+  #   image: mongo:latest
+  #   restart: always
+  #   environment:
+  #     MONGO_INITDB_ROOT_USERNAME: supersecretuser
+  #     MONGO_INITDB_ROOT_PASSWORD: supersecretpw
+  # mongo-express:
+  #   image: mongo-express
+  #   restart: always
+  #   ports:
+  #     - 8081:8081
+  #   environment:
+  #     ME_CONFIG_MONGODB_ADMINUSERNAME: supersecretuser
+  #     ME_CONFIG_MONGODB_ADMINPASSWORD: supersecretpw

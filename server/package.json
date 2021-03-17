@@ -1,11 +1,10 @@
 {
-  "name": "server",
-  "version": "1.0.0",
+  "name": "oskarssuperapp_backend",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "ng build",
     "serve": "node_modules/.bin/ts-node-dev \"server.ts\"",
     "start": "node_modules/.bin/ts-node \"server.ts\""
   },

@@ -1,9 +1,9 @@
 FROM node:alpine AS build
 WORKDIR /app
-COPY package*.json yarn.lock ./
-RUN yarn
+COPY package*.json ./
+RUN npm install
 COPY . .
-RUN yarn run build
+RUN npm ng build --prod
 
 FROM nginx:alpine
 COPY nginx.conf /etc/nginx/nginx.conf

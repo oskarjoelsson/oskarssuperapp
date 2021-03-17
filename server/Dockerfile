@@ -1,6 +1,6 @@
 FROM node:alpine
 WORKDIR /app
-COPY package*.json yarn.lock ./
-RUN yarn
+COPY package*.json ./
+RUN npm install --production
 COPY . .
-CMD yarn start
+CMD npm start
