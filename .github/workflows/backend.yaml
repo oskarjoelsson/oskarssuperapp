@@ -8,6 +8,7 @@ on:
   push:
     paths:
     - 'server/**'
+    - '.github/workflows/backend.yaml'
 
 jobs:
   build:
@@ -28,7 +29,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./server/
-          file: ./Dockerfile
+          file: ./server/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
           tags: oskarjoelssonffcg/oskarssuperapp_backend:dev
